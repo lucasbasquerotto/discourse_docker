@@ -1,3 +1,26 @@
+### About this fork
+
+This fork is intended to provide tags for specific discourse releases.
+
+To sync with the upstream repository:
+
+```
+# 1. Specify the remote upstream repository that will be synced with the fork
+git remote add upstream https://github.com/discourse/discourse_docker.git
+
+# 2 Fetch the branches and their respective commits from the upstream repository
+git fetch upstream
+
+# 3. Check out the fork's local master branch
+git checkout master
+
+# 4. Merge the changes from upstream/master into the local master branch
+git merge upstream/master
+
+# 5. Push the changes
+git push origin master
+```
+
 ### About
 
 - [Docker](https://docker.com/) is an open source project to pack, ship and run any Linux application in a lighter weight, faster container than a traditional virtual machine.
